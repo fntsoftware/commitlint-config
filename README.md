@@ -33,30 +33,9 @@ npm ci
 npx commitlint
 ```
 
-### Commitlint definition file
-Create a file named `commitlint.config.js` with the following content.
-
-``` javascript
-module.exports = {
-  extends: ['@commitlint/config-conventional'],
-  helpUrl: 'https://example.org',
-  rules: {
-    'header-max-length': [2, 'always', 100],
-    'type-empty': [2, 'never'],
-    'type-case': [2, 'always', 'lower-case'],
-    'type-enum': [2, 'always', ['feat','refactor','fix','docs','test','chore','ci','ui']],
-    'scope-empty': [2, 'never'],
-    'scope-case': [2, 'always', 'lower-case'],
-    'subject-empty': [2, 'never'],
-	'body-leading-blank': [2, 'always'],
-    'body-max-line-length': [2, 'always', 100]
-  },
-};
-```
-
 ### Testing
 ```bash
-echo "feat(scope): new feature" | npx commitlint
+echo "feat(scope): new feature" | npx commitlint --config cmd-commitlint.config.js
 ```
 
 alternatively you can read multiline input from a file:

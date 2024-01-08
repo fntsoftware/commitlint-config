@@ -21,6 +21,15 @@ https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-
     commitDepth: 1
 ```
 
+## Structure
+```
+<type>(<scope?>): <subject!>
+<BLANK LINE>
+<body?>
+<BLANK LINE>
+<footer?>
+```
+
 ## Setup commitlint for local testing
 
 ### Install

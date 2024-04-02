@@ -1,6 +1,4 @@
-/* DEPRECATED - This file is deprecated. Please use the cmd-commitlint.config.mjs file instead */
-
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional'],
   helpUrl: 'https://fntgrp.sharepoint.com/sites/DevelopmentOperations/SitePages/GIT.aspx',
   rules: {

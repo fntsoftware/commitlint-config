@@ -13,5 +13,5 @@ export default {
     'body-leading-blank': [2, 'always'],
     'body-max-line-length': [2, 'always', 250]
   },
-  ignores: [(commit) => commit.startsWith('chore(deps):')],
+  ignores: [(commit) => commit.startsWith('chore(deps):') || commit.startsWith('chore(deps-dev):')],
 };
